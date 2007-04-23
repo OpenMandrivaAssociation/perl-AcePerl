@@ -1,7 +1,7 @@
 %define module	AcePerl
 %define name	perl-%{module}
-%define version 1.89
-%define release %mkrel 6
+%define version 1.91
+%define release %mkrel 1
 
 %define _requires_exceptions perl(Ace::Browser::LocalSiteDefs)
 %define _fortify_cflags %nil
