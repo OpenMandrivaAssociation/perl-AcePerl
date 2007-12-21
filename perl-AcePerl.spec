@@ -17,6 +17,7 @@ Patch:		%{name}.makefile.patch
 Url:		http://search.cpan.org/dist/%{module}/
 BuildRequires:	perl-devel
 BuildRequires:  perl(WeakRef)
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Designed specifically for use in genome sequencing projects, ACEDB
