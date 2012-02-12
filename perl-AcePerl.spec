@@ -16,6 +16,7 @@ Patch0:		%{name}.makefile.patch
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(WeakRef)
+BuildRequires:	perl(Cache::Cache)
 
 %description
 Designed specifically for use in genome sequencing projects, ACEDB
