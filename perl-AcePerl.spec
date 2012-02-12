@@ -2,7 +2,6 @@
 %define upstream_version 1.92
 
 %define _requires_exceptions perl(Ace::Browser::LocalSiteDefs)
-%define _fortify_cflags %nil
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
