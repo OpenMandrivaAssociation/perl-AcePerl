@@ -1,4 +1,4 @@
-%define upstream_name	 AcePerl
+%define upstream_name AcePerl
 %define upstream_version 1.92
 
 %define _requires_exceptions perl(Ace::Browser::LocalSiteDefs)
@@ -13,11 +13,10 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Ace/%{upstream_name}-%{upstream_version}.tar.bz2
-Patch0:	    %{name}.makefile.patch
+Patch0:		%{name}.makefile.patch
 
 BuildRequires:	perl-devel
-BuildRequires:  perl(WeakRef)
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
+BuildRequires:	perl(WeakRef)
 
 %description
 Designed specifically for use in genome sequencing projects, ACEDB
@@ -36,18 +35,13 @@ perl -pi -e 's|^#!/usr/local/bin/perl$|#!%{__perl}|' examples/*
 %make COMPILER="gcc %{optflags} -fPIC -DACEDB4"
 
 %install
-%{__rm} -rf %{buildroot}
 %makeinstall_std
 
 %check
 # tests depends on a remote db to pass...
 #make test
 
-%clean 
-%{__rm} -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc README README.ACEBROWSER DISCLAIMER.txt ChangeLog docs examples
 %{_bindir}/*
 %{perl_vendorarch}/GFF
