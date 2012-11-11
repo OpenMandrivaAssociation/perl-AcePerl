@@ -1,0 +1,11 @@
+--- Makefile.PL~	2003-05-12 23:09:00.000000000 +0200
++++ Makefile.PL	2003-07-27 17:51:20.000000000 +0200
+@@ -9,7 +9,7 @@
+ 		  "  1) Interface to Ace socket server and local databases (pure Perl)\n" .
+ 		  "  2) The above plus XS optimizations (requires C compiler)\n" .
+ 		  "  3) The above plus RPC server interface (requires C compiler)\n\n" .
+-		  "Enter your choice: ", "1");
++		  "Enter your choice: ", "3");
+   if ($reply =~ /(\d+)/) {
+     $choice = $1;
+     die "invalid choice: $choice!" if $choice < 1  ||  $choice > 3;
