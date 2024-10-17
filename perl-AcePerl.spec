@@ -11,7 +11,7 @@ Summary:	Perl interface for the ACEDB object-oriented database
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Ace/%{upstream_name}-%{upstream_version}.tar.bz2
 Patch0:		%{name}.makefile.patch
 
