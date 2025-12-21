@@ -15,6 +15,7 @@ Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Ace/%{upstream_name}-%{upstream_version}.tar.bz2
 Patch0:		%{name}.makefile.patch
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(WeakRef)
 BuildRequires:	perl(Cache::Cache)
