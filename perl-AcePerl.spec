@@ -1,18 +1,16 @@
 %define upstream_name AcePerl
-%define upstream_version 1.92
-
 %define __noautoreq 'perl\\(Ace::Browser::LocalSiteDefs\\)'
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	9
+Version:	1.92
+Release:	10
 
 Summary:	Perl interface for the ACEDB object-oriented database
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Ace/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/%{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Ace/%{upstream_name}-%{version}.tar.bz2
 Patch0:		%{name}.makefile.patch
 
 BuildRequires:	make
@@ -28,7 +26,7 @@ laboratory data. For others, it is a good open source introduction to
 the world of object-oriented databases
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 %patch0
 
 perl -pi -e 's|^#!/usr/local/bin/perl$|#!%{__perl}|' examples/*
